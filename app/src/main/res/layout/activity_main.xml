@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvTipPercent"
+        android:id="@+id/tvTipPercentLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -37,7 +37,7 @@
         android:text="Tip"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="@+id/tvBaseLabel"
-        app:layout_constraintTop_toBottomOf="@+id/tvTipPercent" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTipPercentLabel" />
 
     <TextView
         android:id="@+id/tvTotalLabel"
@@ -68,9 +68,9 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:max="30"
-        app:layout_constraintBottom_toBottomOf="@+id/tvTipPercent"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTipPercentLabel"
         app:layout_constraintStart_toStartOf="@+id/etBaseAmount"
-        app:layout_constraintTop_toTopOf="@+id/tvTipPercent" />
+        app:layout_constraintTop_toTopOf="@+id/tvTipPercentLabel" />
 
     <TextView
         android:id="@+id/tvTipAmount"
