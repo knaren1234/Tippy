@@ -7,12 +7,13 @@
     tools:context=".MainActivity">
 
     <!-- View on the left side -->
+
     <TextView
         android:id="@+id/tvBaseLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="52dp"
         android:text="Base"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +34,7 @@
         android:id="@+id/tvTipLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="56dp"
         android:text="Tip"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="@+id/tvBaseLabel"
@@ -91,4 +92,111 @@
         app:layout_constraintStart_toStartOf="@+id/tvTipAmount"
         app:layout_constraintTop_toTopOf="@+id/tvTotalLabel"
         tools:text="103.11" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Made With ❤ By Naren"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTipDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/sbTipPercent"
+        app:layout_constraintStart_toStartOf="@+id/sbTipPercent"
+        app:layout_constraintTop_toBottomOf="@+id/sbTipPercent"
+        tools:text="Acceptable" />
+
+    <TextView
+        android:id="@+id/tvSplitLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Split"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/tvTotalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalLabel" />
+
+    <Button
+        android:id="@+id/btnSplitIncrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSplitLabel"
+        app:layout_constraintStart_toStartOf="@+id/tvTotalAmount"
+        app:layout_constraintTop_toTopOf="@+id/tvSplitLabel" />
+
+    <Button
+        android:id="@+id/btnSplitDecrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSplitNumber"
+        app:layout_constraintStart_toEndOf="@+id/tvSplitNumber"
+        app:layout_constraintTop_toTopOf="@+id/tvSplitNumber" />
+
+    <TextView
+        android:id="@+id/tvSplitTipLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Split Tip"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/tvSplitLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvSplitLabel" />
+
+    <TextView
+        android:id="@+id/tvSplitTipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSplitTipLabel"
+        app:layout_constraintStart_toStartOf="@+id/btnSplitIncrement"
+        app:layout_constraintTop_toTopOf="@+id/tvSplitTipLabel"
+        tools:text="19.96" />
+
+    <TextView
+        android:id="@+id/tvSplitTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Split Total"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/tvSplitTipLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvSplitTipLabel" />
+
+    <TextView
+        android:id="@+id/tvSplitTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSplitTotalLabel"
+        app:layout_constraintStart_toStartOf="@+id/tvSplitTipAmount"
+        app:layout_constraintTop_toTopOf="@+id/tvSplitTotalLabel"
+        tools:text="103.11" />
+
+    <TextView
+        android:id="@+id/tvSplitNumber"
+        android:layout_width="59dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSplitIncrement"
+        app:layout_constraintStart_toEndOf="@+id/btnSplitIncrement"
+        app:layout_constraintTop_toTopOf="@+id/btnSplitIncrement"
+        app:layout_constraintVertical_bias="0.25" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
